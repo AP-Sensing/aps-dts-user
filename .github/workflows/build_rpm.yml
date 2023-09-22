@@ -28,7 +28,6 @@ jobs:
         rm -rf ~/rpmbuild/
         rpmdev-setuptree
         cp -r SPECS/* ~/rpmbuild/SPECS/
-        cp -r SOURCES/* ~/rpmbuild/SOURCES/
     - name: Set Version
       if: ${{ inputs.release }}
       run: |
