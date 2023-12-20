@@ -7,7 +7,7 @@ Group:          Unspecified
 Summary:        A RPM package containing the APSensing dts user configuration
 Distribution:   PhotonPonyOS
 
-URL:            https://github.com/AP-Sensing/ftdi-d2xx/tree/ppos38
+URL:            https://github.com/AP-Sensing/aps-dts-user/tree/ppos38
 Vendor:         AP Sensing
 Packager:       AP Sensing
 Provides:       aps-dts-user = %{version}-%{release}
