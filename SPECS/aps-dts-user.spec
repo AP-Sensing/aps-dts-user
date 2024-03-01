@@ -1,6 +1,6 @@
 BuildArch:      noarch
 Name:           aps-dts-user
-Version:        1.3.0
+Version:        1.3.1
 Release:        1
 License:        GPLv3
 Group:          Unspecified
@@ -39,6 +39,9 @@ install -m 644 %{_sourcedir}/dts_home.conf $RPM_BUILD_ROOT/usr/lib/tmpfiles.d/dt
 %attr(644, root, root) /usr/lib/tmpfiles.d/dts.conf
 
 %changelog
+* Fri Mar 01 2024 Fabian Sauter <fabian.sauter+rpm@apsensing.com> - 1.3.1-1
+- Creating the dts group before adding the user to it
+
 * Fri Mar 01 2024 Fabian Sauter <fabian.sauter+rpm@apsensing.com> - 1.3.0-1
 - Using a fixed user and group ID (822) for the 'dts' user
 
