@@ -1,6 +1,6 @@
 BuildArch:      noarch
 Name:           aps-dts-user
-Version:        1.4.1
+Version:        1.5.1
 Release:        1
 License:        GPLv3
 Group:          Unspecified
@@ -39,6 +39,9 @@ install -m 644 %{_sourcedir}/dts_home.conf $RPM_BUILD_ROOT/usr/lib/tmpfiles.d/dt
 %attr(644, root, root) /usr/lib/tmpfiles.d/dts.conf
 
 %changelog
+* Fri Mar 22 2024 Fabian Sauter <fabian.sauter+rpm@apsensing.com> - 1.5.1-1
+- Reverted adding the aps-admin to the dts group since at this point the user does not exist
+
 * Fri Mar 22 2024 Fabian Sauter <fabian.sauter+rpm@apsensing.com> - 1.4.1-1
 - Added the aps-admin to the dts group
 - Changed the dts home directory to 0750 to allow the aps-admin to access it
