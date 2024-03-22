@@ -40,8 +40,8 @@ install -m 644 %{_sourcedir}/dts_home.conf $RPM_BUILD_ROOT/usr/lib/tmpfiles.d/dt
 
 %changelog
 * Fri Mar 22 2024 Fabian Sauter <fabian.sauter+rpm@apsensing.com> - 1.4.1-1
-- Added the aps_admin to the dts group
-- Changed the dts home directory to 0750 to allow the aps_admin to access it
+- Added the aps-admin to the dts group
+- Changed the dts home directory to 0750 to allow the aps-admin to access it
 
 * Fri Mar 01 2024 Fabian Sauter <fabian.sauter+rpm@apsensing.com> - 1.3.1-1
 - Creating the dts group before adding the user to it
